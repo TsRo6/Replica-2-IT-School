@@ -81,6 +81,7 @@ nav ul{
 
 nav .arrow-down-icon {
     font-size: var(--fs-large);
+    position: absolute;
 }
 
 nav li{
