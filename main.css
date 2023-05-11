@@ -38,6 +38,10 @@ a{
     text-decoration: none;
 }
 
+.menu-icon{
+    display: none;
+}
+
 nav{
     display: block;
     background-color: var(--bg-primary);
@@ -77,20 +81,11 @@ nav ul{
 
 nav .arrow-down-icon {
     font-size: var(--fs-large);
-    position: absolute;
 }
 
-.menu-icon{
-    display: none;
-}
 
-nav li{
-    position: relative;
-}
 
-nav .submenu{
-    display: none;
-}
+
 
 
 
