@@ -83,13 +83,8 @@ nav .arrow-down-icon {
     font-size: var(--fs-large);
 }
 
-.submenu{
-    display: none;
-}
 
-.submenu:hover{
-    background-color: var(--bg-dark);
-}
+
 
 
 
