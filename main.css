@@ -38,6 +38,7 @@ a{
     text-decoration: none;
 }
 
+/* Nav Bar section */
 .menu-icon{
     display: none;
 }
@@ -68,6 +69,10 @@ nav img{
     height: 60px;
 }
 
+nav img:hover{
+    transform: scale(1.1);
+}
+
 nav a{
     font-size: var(--fs-small);
     color: var(--text-light);
@@ -92,19 +97,219 @@ nav a:hover{
     color: var(--text-secondary);
 }
 
-nav .submenu{
+.about-us .submenu{
     display: none;
     position: absolute;
     background-color: var(--bg-dark);
+    top: calc(100% - var(--spacing-small));
+    left: var(--spacing-medium);
+    width: 10rem;
+    padding: var(--spacing-tiny) 0;
+    background-color: var(--bg-dark);
+    z-index: 3;
 }
 
-nav:hover .submenu{
+.submenu a{
+    padding: var(--spacing-tiny) 
+            var(--spacing-small);
+}
+
+.about-us:hover .submenu{
     display: block;
 }
 
+/* Welcome Section */
+main{
+    flex-grow: 1;
+}
+.welcome{
+    background-color: var(--bg-primary);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.welcome .container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.welcome h1, .welcome p{
+    color: var(--text-white);
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+p{
+    font-size: var(--fs-large);
+    margin-bottom: var(--spacing-medium);
+}
+
+.welcome p{
+    margin-bottom: var(--spacing-xl);
+}
+
+.welcome p span {
+    color: var(--text-secondary);
+}
+
+.welcome img{
+    height: 24px;
+    width: auto;
+    position: relative;
+    top: var(--spacing-tiny);
+    margin-left: var(--spacing-medium);
+}
+
+.welcome a{
+    background-color: var(--button-color);
+    color: var(--text-light);
+    font-size: var(--fs-medium);
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--spacing-medium);
+    border-radius: 5px;
+    width: 260px;
+    border: 1px solid;
+    border-color: var(--button-color);
+}
+
+.welcome a:hover {
+    background-color: var(--bg-primary);
+}
+
+/* Courses */
+.courses .container.grid{
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-large);
+}
+
+.courses .course-wrapper {
+    width: calc(100% / 3);
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+}
+
+.courses h2 {
+    margin: var(--spacing-large) 0;
+    text-align: center;
+}
+
+h2{
+    color: var(--text-primary);
+    font-size: 1.75rem;
+}
+
+.courses .course, .courses h3, .courses .badges {
+    margin-bottom: var(--spacing-medium);
+}
+
+.courses .course {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+}
+
+.courses .content {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses .bar {
+    height: var(--spacing-tiny);
+    background-color: var(--button-color);
+    border-radius: 10px;
+}
+
+.courses h3 {
+    color: var(--text-primary);
+    font-weight: 400;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.course .date, .courses .place {
+    padding: var(--spacing-tiny);
+}
+
+.courses span {
+    font-size: var(--fs-medium);
+    color: var(--text-dark);
+}
+
+.courses .material-icons {
+    vertical-align: middle;
+}
+
+.courses .place {
+    background-color: var(--text-secondary);
+    margin-left: var(--spacing-tiny);
+}
 
 
 
+
+
+
+@media (max-width: 768px){
+    nav .menu-icon-container {
+    position: relative;
+    }
+    nav .menu-icon {
+        display: block;
+    }
+    nav input[type="checkbox"] {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+    nav ul {
+        display: none;
+    }
+    .welcome {
+        padding-bottom: 4rem;
+    }
+    .welcome h1 {
+        font-size: 2.5rem;
+    }
+    .welcome p:last-of-type {
+        margin-bottom: 0;
+    }
+    .welcome img {
+        display: block;
+        margin-top: var(--spacing-medium);
+        margin-left: var(--spacing-small);
+    }
+    .welcome a {
+        display: none;
+    }
+    .courses .course-wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px)
+.courses .course-wrapper {
+    width: 50%;
+}
 
 
 
