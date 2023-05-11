@@ -93,8 +93,13 @@ nav a:hover{
 }
 
 nav .submenu{
-    position: absolute;
     display: none;
+    position: absolute;
+    background-color: var(--bg-dark);
+}
+
+nav:hover .submenu{
+    display: block;
 }
 
 
