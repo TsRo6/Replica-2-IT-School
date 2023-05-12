@@ -175,8 +175,7 @@ p{
     padding: var(--spacing-medium);
     border-radius: 5px;
     width: 260px;
-    border: 1px solid;
-    border-color: var(--button-color);
+    border: 1px solid var(--button-color);
 }
 
 .welcome a:hover {
@@ -221,6 +220,11 @@ h2{
     padding: var(--spacing-tiny);
 }
 
+.courses .course:hover{
+    background-color: var(--button-color);
+    transition-duration: 1s;
+}
+
 .courses .content {
     padding: var(--spacing-medium) var(--spacing-small);
 }
@@ -258,7 +262,116 @@ h3{
     margin-left: var(--spacing-tiny);
 }
 
+/* Who we are */
+.who-we-are{
+    background-color: var(--bg-secondary);
+}
 
+.who-we-are .container.grid{
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.who-we-are h2, .who-we-are p {
+    margin-bottom: var(--spacing-large);
+    text-align: center;
+}
+
+.who-we-are h2 {
+    padding-top: var(--spacing-large);
+}
+
+.who-we-are .container.grid p {
+    margin-right: var(--spacing-small);
+    margin-left: var(--spacing-small);
+}
+
+.who-we-are .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-large);
+}
+
+.who-we-are .image-wrapper {
+    width: calc(100% / 3);
+    padding-right: var(--spacing-small);
+    padding-left: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+
+.who-we-are img {
+    width: 100%;
+    height: auto;
+}
+
+/* Parteners */
+.partners h2, .partners .partners-container {
+    margin-bottom: var(--spacing-large);
+}
+
+.partners h2 {
+    padding-top: var(--spacing-large);
+    text-align: center;
+}
+
+.partners .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 var(--spacing-xl);
+}
+
+.partners .image-wrapper {
+    width: 100px;
+    margin-right: var(--spacing-xl);
+    margin-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-medium);
+}
+
+.partners img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.partners img:hover{
+    filter: none;
+}
+
+.circle-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 2px solid var(--button-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .circle-container:hover .circle {
+    width: 100%;
+    height: 5%;
+    opacity: 1;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: var(--fs-small);
+    text-align: center;
+    color: var(--text-light);
+    padding: var(--spacing-medium) 0;
+}
+
+footer{
+    background-color: var(--bg-primary);
+}
 
 
 
@@ -304,11 +417,21 @@ h3{
     .courses .course-wrapper {
         width: 100%;
     }
+    .who-we-are .image-wrapper {
+        width: 100%;
+    }
+    .partners .partners-container {
+        margin: 0 var(--spacing-small);
+    }
 }
 
-@media (max-width: 992px)
-.courses .course-wrapper {
-    width: 50%;
+@media (max-width: 992px){
+    .courses .course-wrapper {
+        width: 50%;
+    }
+    .who-we-are .image-wrapper {
+        width: 50%;
+    }
 }
 
 
