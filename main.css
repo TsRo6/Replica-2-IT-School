@@ -70,7 +70,7 @@ nav img{
 }
 
 nav img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 nav a{
@@ -79,7 +79,7 @@ nav a{
     padding: var(--spacing-medium);
 }
 
-nav ul{
+ul{
     list-style-type: none;
     display: flex;
 }
@@ -95,6 +95,7 @@ nav li{
 
 nav a:hover{
     color: var(--text-secondary);
+    transform: scale(1.1);
 }
 
 .about-us .submenu{
@@ -146,7 +147,8 @@ h1{
 }
 
 p{
-    font-size: var(--fs-large);
+    font-size: var(--fs-medium);
+    color: var(--text-dark);
     margin-bottom: var(--spacing-medium);
 }
 
