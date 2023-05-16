@@ -17,7 +17,7 @@
     --spacing-medium: 1rem;
     --spacing-small: 0.5rem;
     --spacing-tiny: 0.25rem;
-    --mobile-logo-height: 45px;
+    --mobile-logo-height: 2.8rem;
 }
 
 *{
@@ -58,15 +58,15 @@ nav .container{
 }
 
 .container{
-    max-width: 1200px;
-    min-width: 320px;
+    max-width: 75rem;
+    min-width: 20rem;
     margin: auto;
     padding: var(--spacing-medium);
 }
 
 nav img{
     width: auto;
-    height: 60px;
+    height: 3.75rem;
 }
 
 nav img:hover{
@@ -176,7 +176,7 @@ p{
     text-align: center;
     padding: var(--spacing-medium);
     border-radius: 5px;
-    width: 260px;
+    width: 16.25rem;
     border: 1px solid var(--button-color);
 }
 
@@ -374,8 +374,6 @@ h3{
 footer{
     background-color: var(--bg-primary);
 }
-
-
 
 
 @media (max-width: 768px){

@@ -27,7 +27,7 @@
 
 .trainers .trainer {
     width: 100%;
-    min-height: 350px;
+    min-height: 22rem;
     padding: var(--spacing-small);
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -38,11 +38,11 @@
 }
 
 .trainers .image-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     border-radius: 50%;
     overflow: hidden;
-    margin-top: -70px;
+    margin-top: -4.375rem;
 }
 
 .trainer img {
@@ -74,7 +74,7 @@
         width: 50%;
     }
     .trainers .trainer {
-        min-height: 310px;
+        min-height: 19.375rem;
     }
 }
 

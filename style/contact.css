@@ -80,7 +80,7 @@
     border: 1px solid var(--button-color);
     border-radius: 5px;
     padding: var(--spacing-small);
-    width: 100px;
+    width: 6.25rem;
 }
 
 .contact input[type="submit"]:hover{
